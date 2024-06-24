@@ -14,12 +14,6 @@
 // });
 
 // TIME
-setInterval(() => {
-  let time = document.getElementById("time")
-let date = new Date()
-let e = date.toLocaleTimeString()
-time.innerHTML = e 
-}, 1000);
 
 // SUBMIT BUTTON FUNCTION  
 
