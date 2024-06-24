@@ -232,10 +232,53 @@ h3 {
   z-index: -1;
   position: relative;
 }
-
-.works img:hover {
-  transform: scale(1.1);
+.works a{
+  border-radius: 10px;
+  display: block;
+  width: 70%;
+  height: 200px;
+  /* background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+  backdrop-filter: blur(30px); */
+  
+ 
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  /* position: relative; */
+  transition: 0.9s ease-in;
+  background-size: cover;
+  background-position: center;
 }
+.works a.Fa:hover{
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images.jpg");
+}
+.works a.Fa{
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("images.jpg");
+}
+.works a.Sa{
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("Wet.png");
+}
+.works a.Sa:hover{
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Wet.png");
+}
+.works a.Ta{
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("https://imgv3.fotor.com/images/blog-richtext-image/yellow-smiling-emoji.jpg");
+}
+.works a.Ta:hover{
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://imgv3.fotor.com/images/blog-richtext-image/yellow-smiling-emoji.jpg");
+}
+
+.works a p{
+  font-size: 30px;
+  font-weight: 600;
+  color: #669bbc;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.works a span{
+  color: white;
+  font-weight: 200;
+}
+
 
 .con-L {
   flex-basis: 35%;
@@ -367,6 +410,9 @@ span.namee{
 }
 #work{
   padding: 0 18px;
+}
+.works a{
+  width: 100%;
 }
 
 @media (max-width: 450px){
