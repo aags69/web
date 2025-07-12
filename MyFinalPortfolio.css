@@ -26,10 +26,7 @@ body {
 } */
 .back{
   width: 100%;
-  height: 100vh;
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.65)), url('https://static.vecteezy.com/system/resources/previews/026/266/566/non_2x/successful-stock-market-statistical-information-and-trends-with-up-arrows-futuristic-financial-trading-chart-economic-information-growth-background-vector.jpg'); */
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.65)), url('https://www.designyourway.net/blog/wp-content/uploads/2018/01/9xuYZ9H.jpg'); */
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.65)), url('https://img.freepik.com/free-vector/abstract-wireframe-grid-line-room-perspective-dark-background_1017-54548.jpg?semt=ais_hybrid&w=740'); */
+  height: 100vh; 
   background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.25)), url("https://ik.imagekit.io/tirmqoxpgx/20250712_1437_Young%20Trader's%20Midnight%20Focus_simple_compose_01jzyx9gqaf0pbm0kg177zvter.png?updatedAt=1752310414862");
   
   background-position: center;
