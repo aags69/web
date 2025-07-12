@@ -448,3 +448,57 @@ span.namee{
     font-size: 10px;
   }
 }
+
+
+.slider-container {
+      max-width: 800px;
+      position: relative;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      transition: opacity 0.5s ease;
+    }
+
+    .slide img {
+      width: 100%;
+      display: block;
+    }
+
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      font-size: 24px;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 20%;
+      z-index: 10;
+      transition: 0.2s;
+    }
+
+    .nav-btn:hover {
+      background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+      backdrop-filter: blur(20px);;
+      font-size: 25px;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
