@@ -1,19 +1,3 @@
-// var typed = new typed('#element', {
-//     strings: ['Graphics Designer ,', '&', 'Web Developer.'],
-//     typeSpeed: 70,
-// });
-
-// SCROLL FUNCTION
-// $(window).scroll(function(){
-//   if($(window).scrollTop()){
-//     $("nav").addClass("black");
-//   }
-//   else{
-//     $("nav").removeClass("black");
-//   }
-// });
-
-// TIME
 
 // SUBMIT BUTTON FUNCTION  
 
@@ -34,3 +18,32 @@ form.addEventListener('submit', e => {
     })
     .catch(error => console.error('Error!', error.message))
 })
+
+//For image slider
+const slides = document.querySelector('.slides');
+  const slide = document.querySelectorAll('.slide');
+  const prev = document.querySelector('.prev');
+  const next = document.querySelector('.next');
+
+  let index = 0;
+
+  function showSlide(i) {
+    index = (i + slide.length) % slide.length;
+    slides.style.transform = `translateX(${-index * 100}%)`;
+  }
+
+  prev.addEventListener('click', () => {
+    showSlide(index - 1);
+  });
+
+  next.addEventListener('click', () => {
+    showSlide(index + 1);
+  });
+
+  // Auto-slide every 5 seconds
+  setInterval(() => {
+    showSlide(index + 1);
+  }, 5000);
+
+  // Initial call
+  showSlide(index);
